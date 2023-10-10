@@ -1,0 +1,167 @@
+/* Cabeçalho do site */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4d1a0ac4;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  nav{
+    margin-top: 30px;
+    margin-bottom: 0%;
+  }
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 0;
+    font-size: 30px;
+  }
+  
+  
+  /* Estilo dos botões de navegação */
+  .nav-button {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 0%;
+  }
+  
+  .nav-button h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-button:hover h4 {
+    color: #4d1a0a;
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 10px;
+  }
+  
+  .nav-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nav-button:hover::before {
+    opacity: 1;
+  }
+  
+  .logo{
+    display: inline-flex;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0%;
+  }
+  .logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 60px;
+  }
+  
+/*Redução para mobile*/
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*logo*/
+.logo img{
+    width: 150px;
+    height: 120px;
+    margin-right: 80pz;
+}
+
+/*Cardápio/Corpo do site*/
+
+section h1{
+    margin-top: 0%;
+    position: static;
+    text-align: center;
+    font-size: 3em;
+    color: #4d1a0ac4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-bottom: 0%;
+}
+
+section h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+section span{
+    display: inline-flex;
+    color: #4d1a0ac4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #4d1a0a56;
+    width: 100%;
+    margin: 10px 2px 10px 2px;
+}
+
+section span ul{
+    margin-bottom: 0%;
+
+}
+section span img{
+    width: 15em;
+    height: 15em;
+    border: solid 5px;
+    border-radius: 20px 20px 20px;
+    margin-bottom: 0%;
+
+}
+
+/* rodapé do site */
+footer{
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
+    background-color: #4d1a0ac4;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#social-medias img{
+    width: 50px;
+    
+    margin-right: 30px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+}
+
+#loc{
+    margin-top: 1%;
+    margin-bottom: 0%;
+    text-align: center;
+}
